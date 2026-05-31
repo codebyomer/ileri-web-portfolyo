@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Mobil uyumluluk için Viewport Meta Etiketi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ömer Faruk - CV & Portfolyo</title>
+    <!-- Harici CSS Dosyası Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Ömer Faruk</h2>
+        <button id="themeToggleBtn">Temayı Değiştir</button>
+    </nav>
+
+    <div class="container">
+        <!-- HTML Yapısı ve Listeler -->
+        <section id="hakkimda" class="card">
+            <h3>Hakkımda & Yetenekler</h3>
+            <p>MAKÜ Bilişim Sistemleri Mühendisliği öğrencisiyim. Yazılım geliştirme ve donanım entegrasyonları üzerine
+                çalışıyorum.</p>
+            <ul>
+                <li><strong>Yazılım:</strong> Java, Spring Boot, Python, HTML/CSS, JavaScript</li>
+                <li><strong>Donanım & Tasarım:</strong> Arduino, Blender, Krita</li>
+            </ul>
+        </section>
+
+        <h3>Projelerim</h3>
+        <div class="grid-container">
+            <!-- Proje Kartı 1 -->
+            <div class="card">
+                <h4>Hava Durumu Uygulaması</h4>
+                <p>Fetch API kullanılarak anlık veri çeken dinamik web arayüzü.</p>
+                <span class="badge">HTML/CSS</span> <span class="badge">JavaScript</span>
+            </div>
+            <!-- Proje Kartı 2 -->
+            <div class="card">
+                <h4>Arduino Tepki Ölçer</h4>
+                <p>Kesme (interrupt) mantığı ile çalışan, görsel uyarana verilen tepkiyi ölçen sistem.</p>
+                <span class="badge">C++</span> <span class="badge">Arduino</span>
+            </div>
+        </div>
+
+        <!-- İletişim Formu Bölümü -->
+        <section id="iletisim" class="card">
+            <h3>İletişim</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">İsim:</label>
+                    <input type="text" id="name" placeholder="Adınız Soyadınız" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" placeholder="E-posta Adresiniz" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" rows="4" placeholder="Mesajınızı buraya yazın..." required></textarea>
+                </div>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Harici JavaScript Dosyası Bağlantısı -->
+    <script src="script.js"></script>
+</body>
+
+</html>
